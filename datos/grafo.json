@@ -1,0 +1,19 @@
+{
+  "nombre": "Cinemática: de MRU a tiro parabólico",
+  "nota": "Subgrafo simplificado del grafo de subtemas de mecánica. Cada habilidad lista sus prerrequisitos directos.",
+  "habilidades": [
+    {"id": "MAG3",  "nombre": "Conversión de unidades",                 "unidad": "Magnitudes",       "pre": []},
+    {"id": "VEC3",  "nombre": "Componentes cartesianas",                "unidad": "Vectores",         "pre": []},
+    {"id": "VEC10", "nombre": "Descomposición de vectores",             "unidad": "Vectores",         "pre": ["VEC3"]},
+    {"id": "MRU6",  "nombre": "Velocidad constante",                    "unidad": "MRU",              "pre": ["MAG3"]},
+    {"id": "MRU7",  "nombre": "Ecuación de posición",                   "unidad": "MRU",              "pre": ["MRU6"]},
+    {"id": "MUA4",  "nombre": "Ecuaciones del movimiento acelerado",    "unidad": "MUA",              "pre": ["MRU7"]},
+    {"id": "MUA7",  "nombre": "Relación entre velocidad y desplazamiento", "unidad": "MUA",           "pre": ["MUA4"]},
+    {"id": "MUA11", "nombre": "Caída libre",                            "unidad": "MUA",              "pre": ["MUA4"]},
+    {"id": "MUA12", "nombre": "Lanzamiento vertical",                   "unidad": "MUA",              "pre": ["MUA11", "MUA7"]},
+    {"id": "TIR2",  "nombre": "Descomposición de la velocidad inicial", "unidad": "Tiro parabólico",  "pre": ["VEC10"]},
+    {"id": "TIR7",  "nombre": "Tiempo de vuelo",                        "unidad": "Tiro parabólico",  "pre": ["TIR2", "MUA12"]},
+    {"id": "TIR8",  "nombre": "Altura máxima",                          "unidad": "Tiro parabólico",  "pre": ["TIR2", "MUA12"]},
+    {"id": "TIR9",  "nombre": "Alcance horizontal",                     "unidad": "Tiro parabólico",  "pre": ["TIR7", "MRU7"]}
+  ]
+}

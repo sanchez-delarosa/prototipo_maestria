@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Repaso por habilidades</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<div class="app">
+  <header class="topbar">
+    <div class="marca">
+      <span class="marca-t">Repaso por habilidades</span>
+      <span class="marca-s">Prototipo · cinemática, 13 subtemas</span>
+    </div>
+    <div class="reloj">
+      <span class="dia" id="dia">Día 0</span>
+      <button class="btn primario" id="btn-dia" data-accion="dia">Pasa un día</button>
+      <button class="btn" data-accion="semana">Pasa una semana</button>
+      <button class="btn sutil" data-accion="reiniciar" id="btn-reiniciar">Reiniciar</button>
+    </div>
+  </header>
+
+  <main class="paneles">
+    <section class="panel alumno" aria-labelledby="t-alumno">
+      <div class="panel-cab">
+        <h2 id="t-alumno">Lo que ve el estudiante</h2>
+        <div class="progreso" id="progreso" aria-label="Avance de la sesión"></div>
+      </div>
+      <div class="alumno-cuerpo" id="alumno"></div>
+    </section>
+
+    <section class="panel backend" aria-labelledby="t-backend">
+      <div class="panel-cab">
+        <h2 id="t-backend">Lo que hace el sistema</h2>
+        <div class="atajos">
+          <span class="atajos-t">Atajos para la demo</span>
+          <button class="btn mini" data-accion="auto-bien">Responder bien</button>
+          <button class="btn mini" data-accion="auto-mal">Responder mal</button>
+          <button class="btn mini" data-accion="auto-dia">Simular el resto del día</button>
+        </div>
+      </div>
+      <div class="backend-cuerpo">
+        <div id="actual"></div>
+        <div class="pestanas" role="tablist">
+          <button class="pestana" role="tab" data-pestana="estado" aria-selected="true">Estado</button>
+          <button class="pestana" role="tab" data-pestana="plan" aria-selected="false">Plan de hoy</button>
+          <button class="pestana" role="tab" data-pestana="bitacora" aria-selected="false">Bitácora</button>
+          <button class="pestana" role="tab" data-pestana="parametros" aria-selected="false">Parámetros</button>
+        </div>
+        <div id="vista-estado" class="vista"></div>
+        <div id="vista-plan" class="vista" hidden></div>
+        <div id="vista-bitacora" class="vista" hidden></div>
+        <div id="vista-parametros" class="vista" hidden></div>
+      </div>
+    </section>
+  </main>
+</div>
+<script src="motor.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

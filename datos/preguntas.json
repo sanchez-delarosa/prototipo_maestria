@@ -1,0 +1,250 @@
+{
+  "formato": {
+    "variables": "Cada variable es [mínimo, máximo, paso] o {\"valores\": [...]} y se sortea en cada intento.",
+    "derivadas": "Expresiones que se calculan en orden a partir de las variables. Existe la constante g = 9.8.",
+    "respuesta": "Expresión de la respuesta numérica. Funciones: sqrt, sin, cos, tan, asin, acos, atan (en grados), abs, min, max.",
+    "texto": "En el enunciado y los pasos, {nombre} se reemplaza por el valor; {respuesta} por la respuesta.",
+    "tolerancia": "Error relativo aceptado (por defecto 0.02).",
+    "tipo opcion": "Pregunta de opción múltiple: opciones y el índice de la correcta (desde 0)."
+  },
+  "plantillas": [
+    {
+      "id": "MAG3-a", "habilidad": "MAG3",
+      "enunciado": "Convierte {v} km/h a m/s.",
+      "variables": {"v": [36, 126, 18]},
+      "respuesta": "v/3.6", "unidad": "m/s",
+      "pasos": ["1 km/h = 1000 m / 3600 s = 1/3.6 m/s.", "{v} km/h ÷ 3.6 = {respuesta} m/s."]
+    },
+    {
+      "id": "MAG3-b", "habilidad": "MAG3",
+      "enunciado": "Convierte {v} m/s a km/h.",
+      "variables": {"v": [5, 40, 5]},
+      "respuesta": "v*3.6", "unidad": "km/h",
+      "pasos": ["1 m/s = 3.6 km/h.", "{v} m/s × 3.6 = {respuesta} km/h."]
+    },
+    {
+      "id": "MAG3-c", "habilidad": "MAG3",
+      "enunciado": "Un cable mide {d} cm. ¿Cuántos metros mide?",
+      "variables": {"d": [150, 950, 50]},
+      "respuesta": "d/100", "unidad": "m",
+      "pasos": ["1 m = 100 cm.", "{d} cm ÷ 100 = {respuesta} m."]
+    },
+    {
+      "id": "VEC3-a", "habilidad": "VEC3",
+      "enunciado": "Un vector tiene componentes Ax = {ax} y Ay = {ay}. ¿Cuál es su magnitud?",
+      "variables": {"ax": [3, 12, 1], "ay": [2, 12, 1]},
+      "respuesta": "sqrt(ax^2 + ay^2)", "unidad": "",
+      "pasos": ["|A| = √(Ax² + Ay²).", "|A| = √({ax}² + {ay}²) = {respuesta}."]
+    },
+    {
+      "id": "VEC3-b", "habilidad": "VEC3",
+      "enunciado": "Un móvil va del punto ({x1}, {y1}) m al punto ({x2}, {y2}) m. ¿Cuál es la componente x del desplazamiento?",
+      "variables": {"x1": [-5, 5, 1], "y1": [-5, 5, 1], "x2": [-8, 12, 1], "y2": [-8, 12, 1]},
+      "respuesta": "x2 - x1", "unidad": "m",
+      "pasos": ["Δx = x₂ − x₁.", "Δx = {x2} − ({x1}) = {respuesta} m."]
+    },
+    {
+      "id": "VEC3-c", "habilidad": "VEC3",
+      "enunciado": "¿Qué ángulo forma con el eje x un vector de componentes Ax = {ax} y Ay = {ay}? Responde en grados.",
+      "variables": {"ax": [2, 10, 1], "ay": [2, 10, 1]},
+      "respuesta": "atan(ay/ax)", "unidad": "°",
+      "pasos": ["θ = arctan(Ay / Ax).", "θ = arctan({ay} / {ax}) = {respuesta}°."]
+    },
+    {
+      "id": "VEC10-a", "habilidad": "VEC10",
+      "enunciado": "Una fuerza de {F} N forma un ángulo de {a}° con la horizontal. ¿Cuál es su componente horizontal?",
+      "variables": {"F": [10, 100, 10], "a": {"valores": [20, 30, 37, 45, 53, 60, 70]}},
+      "respuesta": "F*cos(a)", "unidad": "N",
+      "pasos": ["Fx = F·cos θ.", "Fx = {F}·cos {a}° = {respuesta} N."]
+    },
+    {
+      "id": "VEC10-b", "habilidad": "VEC10",
+      "enunciado": "Una cuerda tira de una caja con {F} N a {a}° sobre la horizontal. ¿Cuál es la componente vertical de esa fuerza?",
+      "variables": {"F": [20, 120, 10], "a": {"valores": [15, 25, 30, 40, 50, 60]}},
+      "respuesta": "F*sin(a)", "unidad": "N",
+      "pasos": ["Fy = F·sen θ.", "Fy = {F}·sen {a}° = {respuesta} N."]
+    },
+    {
+      "id": "MRU6-a", "habilidad": "MRU6",
+      "enunciado": "Un ciclista se mueve con velocidad constante y recorre {d} m en {t} s. ¿Cuál es su velocidad?",
+      "variables": {"d": [60, 600, 30], "t": [10, 60, 5]},
+      "respuesta": "d/t", "unidad": "m/s",
+      "pasos": ["En MRU, v = d / t.", "v = {d} m / {t} s = {respuesta} m/s."]
+    },
+    {
+      "id": "MRU6-b", "habilidad": "MRU6",
+      "enunciado": "Un tren viaja a {v} m/s constantes. ¿Cuánto tarda en recorrer {d} m?",
+      "variables": {"v": [10, 40, 2], "d": [200, 2000, 100]},
+      "respuesta": "d/v", "unidad": "s",
+      "pasos": ["t = d / v.", "t = {d} m / {v} m/s = {respuesta} s."]
+    },
+    {
+      "id": "MRU6-c", "habilidad": "MRU6",
+      "enunciado": "Un auto viaja a {v} km/h constantes durante {t} s. ¿Qué distancia recorre en metros?",
+      "variables": {"v": [36, 108, 18], "t": [5, 30, 5]},
+      "derivadas": {"vms": "v/3.6"},
+      "respuesta": "vms*t", "unidad": "m",
+      "pasos": ["Primero a m/s: {v} km/h ÷ 3.6 = {vms} m/s.", "d = v·t = {vms}·{t} = {respuesta} m."]
+    },
+    {
+      "id": "MRU7-a", "habilidad": "MRU7",
+      "enunciado": "Un móvil parte de x₀ = {x0} m y se mueve con velocidad constante de {v} m/s. ¿Cuál es su posición en t = {t} s?",
+      "variables": {"x0": [-20, 20, 5], "v": [2, 12, 1], "t": [2, 15, 1]},
+      "respuesta": "x0 + v*t", "unidad": "m",
+      "pasos": ["x(t) = x₀ + v·t.", "x = {x0} + {v}·{t} = {respuesta} m."]
+    },
+    {
+      "id": "MRU7-b", "habilidad": "MRU7",
+      "enunciado": "Un móvil está en x₀ = {x0} m y se mueve hacia la izquierda a {v} m/s constantes. ¿Cuál es su posición en t = {t} s?",
+      "variables": {"x0": [10, 60, 5], "v": [2, 8, 1], "t": [2, 12, 1]},
+      "respuesta": "x0 - v*t", "unidad": "m",
+      "pasos": ["Hacia la izquierda la velocidad es negativa: x(t) = x₀ − v·t.", "x = {x0} − {v}·{t} = {respuesta} m."]
+    },
+    {
+      "id": "MRU7-c", "habilidad": "MRU7",
+      "enunciado": "Un móvil parte de x₀ = {x0} m con velocidad constante de {v} m/s. ¿En qué instante llega a x = {xf} m?",
+      "variables": {"x0": [-10, 10, 2], "v": [2, 10, 1], "tt": [3, 15, 1]},
+      "derivadas": {"xf": "x0 + v*tt"},
+      "respuesta": "(xf - x0)/v", "unidad": "s",
+      "pasos": ["De x = x₀ + v·t se despeja t = (x − x₀) / v.", "t = ({xf} − {x0}) / {v} = {respuesta} s."]
+    },
+    {
+      "id": "MUA4-a", "habilidad": "MUA4",
+      "enunciado": "Un auto parte del reposo con aceleración constante de {a} m/s². ¿Qué velocidad tiene a los {t} s?",
+      "variables": {"a": [1, 6, 0.5], "t": [2, 12, 1]},
+      "respuesta": "a*t", "unidad": "m/s",
+      "pasos": ["v = v₀ + a·t, con v₀ = 0.", "v = {a}·{t} = {respuesta} m/s."]
+    },
+    {
+      "id": "MUA4-b", "habilidad": "MUA4",
+      "enunciado": "Un auto que va a {v0} m/s acelera a {a} m/s² durante {t} s. ¿Qué distancia recorre en ese tiempo?",
+      "variables": {"v0": [5, 20, 1], "a": [1, 4, 0.5], "t": [2, 10, 1]},
+      "respuesta": "v0*t + 0.5*a*t^2", "unidad": "m",
+      "pasos": ["Δx = v₀·t + ½·a·t².", "Δx = {v0}·{t} + ½·{a}·{t}² = {respuesta} m."]
+    },
+    {
+      "id": "MUA4-c", "habilidad": "MUA4",
+      "enunciado": "Un auto frena de {v0} m/s hasta detenerse en {t} s. ¿Cuál es su aceleración? Escribe el signo.",
+      "variables": {"v0": [10, 30, 2], "t": [2, 8, 1]},
+      "respuesta": "-v0/t", "unidad": "m/s²",
+      "pasos": ["a = (v − v₀) / t, con v = 0.", "a = (0 − {v0}) / {t} = {respuesta} m/s²."]
+    },
+    {
+      "id": "MUA7-a", "habilidad": "MUA7",
+      "enunciado": "Un auto parte del reposo y acelera a {a} m/s² a lo largo de {d} m. ¿Qué velocidad alcanza?",
+      "variables": {"a": [1, 5, 0.5], "d": [20, 200, 10]},
+      "respuesta": "sqrt(2*a*d)", "unidad": "m/s",
+      "pasos": ["v² = v₀² + 2·a·Δx, con v₀ = 0.", "v = √(2·{a}·{d}) = {respuesta} m/s."]
+    },
+    {
+      "id": "MUA7-b", "habilidad": "MUA7",
+      "enunciado": "Un auto que va a {v0} m/s frena con una desaceleración de {a} m/s². ¿Qué distancia recorre hasta detenerse?",
+      "variables": {"v0": [10, 30, 2], "a": [2, 8, 1]},
+      "respuesta": "v0^2/(2*a)", "unidad": "m",
+      "pasos": ["0 = v₀² − 2·a·Δx, así que Δx = v₀² / (2a).", "Δx = {v0}² / (2·{a}) = {respuesta} m."]
+    },
+    {
+      "id": "MUA11-a", "habilidad": "MUA11",
+      "enunciado": "Se deja caer una piedra desde {h} m de altura. ¿Cuánto tarda en llegar al suelo? Usa g = 9.8 m/s².",
+      "variables": {"h": [5, 80, 5]},
+      "respuesta": "sqrt(2*h/g)", "unidad": "s",
+      "pasos": ["h = ½·g·t², así que t = √(2h / g).", "t = √(2·{h} / 9.8) = {respuesta} s."]
+    },
+    {
+      "id": "MUA11-b", "habilidad": "MUA11",
+      "enunciado": "Un objeto se suelta desde el reposo y cae libremente durante {t} s. ¿Qué rapidez tiene? Usa g = 9.8 m/s².",
+      "variables": {"t": [1, 5, 0.5]},
+      "respuesta": "g*t", "unidad": "m/s",
+      "pasos": ["v = g·t.", "v = 9.8·{t} = {respuesta} m/s."]
+    },
+    {
+      "id": "MUA11-c", "habilidad": "MUA11", "tipo": "opcion",
+      "enunciado": "Sin resistencia del aire, se sueltan al mismo tiempo una piedra de {m1} kg y otra de {m2} kg desde la misma altura. ¿Cuál llega primero al suelo?",
+      "variables": {"m1": [1, 3, 1], "m2": [5, 10, 1]},
+      "opciones": ["La de {m2} kg", "La de {m1} kg", "Llegan al mismo tiempo"],
+      "correcta": 2,
+      "pasos": ["En caída libre la aceleración es g para cualquier masa.", "Con la misma altura y la misma aceleración, tardan lo mismo."]
+    },
+    {
+      "id": "MUA12-a", "habilidad": "MUA12",
+      "enunciado": "Se lanza una pelota hacia arriba a {v0} m/s. ¿Qué altura máxima alcanza sobre el punto de lanzamiento? Usa g = 9.8 m/s².",
+      "variables": {"v0": [8, 30, 2]},
+      "respuesta": "v0^2/(2*g)", "unidad": "m",
+      "pasos": ["En la altura máxima v = 0: 0 = v₀² − 2·g·h.", "h = {v0}² / (2·9.8) = {respuesta} m."]
+    },
+    {
+      "id": "MUA12-b", "habilidad": "MUA12",
+      "enunciado": "Se lanza una pelota hacia arriba a {v0} m/s. ¿Cuánto tarda en volver al punto de lanzamiento? Usa g = 9.8 m/s².",
+      "variables": {"v0": [8, 30, 2]},
+      "respuesta": "2*v0/g", "unidad": "s",
+      "pasos": ["Sube durante v₀/g y tarda lo mismo en bajar.", "t = 2·{v0} / 9.8 = {respuesta} s."]
+    },
+    {
+      "id": "MUA12-c", "habilidad": "MUA12",
+      "enunciado": "Se lanza una pelota hacia arriba a {v0} m/s. ¿Qué velocidad tiene a los {t} s? Toma positivo hacia arriba y usa g = 9.8 m/s².",
+      "variables": {"v0": [15, 30, 1], "t": [1, 4, 0.5]},
+      "respuesta": "v0 - g*t", "unidad": "m/s",
+      "pasos": ["v = v₀ − g·t.", "v = {v0} − 9.8·{t} = {respuesta} m/s. Si sale negativa, ya va de bajada."]
+    },
+    {
+      "id": "TIR2-a", "habilidad": "TIR2",
+      "enunciado": "Un proyectil se lanza a {v0} m/s con un ángulo de {a}° sobre la horizontal. ¿Cuál es la componente vertical de su velocidad inicial?",
+      "variables": {"v0": [10, 40, 2], "a": {"valores": [20, 30, 37, 45, 53, 60, 70]}},
+      "respuesta": "v0*sin(a)", "unidad": "m/s",
+      "pasos": ["v₀y = v₀·sen θ.", "v₀y = {v0}·sen {a}° = {respuesta} m/s."]
+    },
+    {
+      "id": "TIR2-b", "habilidad": "TIR2",
+      "enunciado": "Un balón se patea a {v0} m/s con un ángulo de {a}° sobre la horizontal. ¿Cuál es la componente horizontal de su velocidad inicial?",
+      "variables": {"v0": [10, 40, 2], "a": {"valores": [20, 30, 37, 45, 53, 60, 70]}},
+      "respuesta": "v0*cos(a)", "unidad": "m/s",
+      "pasos": ["v₀x = v₀·cos θ.", "v₀x = {v0}·cos {a}° = {respuesta} m/s."]
+    },
+    {
+      "id": "TIR7-a", "habilidad": "TIR7",
+      "enunciado": "Un balón se patea a {v0} m/s con un ángulo de {a}° y cae al mismo nivel. ¿Cuánto tiempo está en el aire? Usa g = 9.8 m/s².",
+      "variables": {"v0": [10, 30, 2], "a": {"valores": [25, 30, 37, 45, 53, 60]}},
+      "derivadas": {"vy": "v0*sin(a)"},
+      "respuesta": "2*vy/g", "unidad": "s",
+      "pasos": ["Componente vertical: v₀y = {v0}·sen {a}° = {vy} m/s.", "Sube durante v₀y/g y baja lo mismo: t = 2·{vy} / 9.8 = {respuesta} s."]
+    },
+    {
+      "id": "TIR7-b", "habilidad": "TIR7",
+      "enunciado": "Un proyectil sale con una componente vertical de velocidad de {vy} m/s y cae al mismo nivel. ¿Cuánto tiempo está en el aire? Usa g = 9.8 m/s².",
+      "variables": {"vy": [5, 25, 1]},
+      "respuesta": "2*vy/g", "unidad": "s",
+      "pasos": ["El movimiento vertical es un lanzamiento vertical.", "t = 2·{vy} / 9.8 = {respuesta} s."]
+    },
+    {
+      "id": "TIR8-a", "habilidad": "TIR8",
+      "enunciado": "Un proyectil se lanza a {v0} m/s con un ángulo de {a}°. ¿Qué altura máxima alcanza sobre el punto de lanzamiento? Usa g = 9.8 m/s².",
+      "variables": {"v0": [10, 30, 2], "a": {"valores": [25, 30, 37, 45, 53, 60]}},
+      "derivadas": {"vy": "v0*sin(a)"},
+      "respuesta": "vy^2/(2*g)", "unidad": "m",
+      "pasos": ["v₀y = {v0}·sen {a}° = {vy} m/s.", "En la altura máxima vy = 0: h = v₀y² / (2g) = {vy}² / 19.6 = {respuesta} m."]
+    },
+    {
+      "id": "TIR8-b", "habilidad": "TIR8", "tipo": "opcion",
+      "enunciado": "Un balón se patea a {v0} m/s con un ángulo de {a}°. En el punto más alto de su trayectoria, ¿cuánto vale la componente vertical de su velocidad?",
+      "variables": {"v0": [10, 30, 2], "a": {"valores": [30, 45, 60]}},
+      "opciones": ["Es máxima", "Es cero", "Es igual a la componente horizontal"],
+      "correcta": 1,
+      "pasos": ["Al subir, vy disminuye; al bajar, vuelve a crecer hacia abajo.", "En el punto más alto vy = 0; sólo queda la componente horizontal."]
+    },
+    {
+      "id": "TIR9-a", "habilidad": "TIR9",
+      "enunciado": "Un balón se patea a {v0} m/s con un ángulo de {a}° y cae al mismo nivel. ¿A qué distancia horizontal cae? Usa g = 9.8 m/s².",
+      "variables": {"v0": [10, 30, 2], "a": {"valores": [25, 30, 37, 45, 53, 60]}},
+      "derivadas": {"vx": "v0*cos(a)", "vy": "v0*sin(a)", "tv": "2*vy/g"},
+      "respuesta": "vx*tv", "unidad": "m",
+      "pasos": ["Componentes: vx = {vx} m/s y v₀y = {vy} m/s.", "Tiempo de vuelo: t = 2·v₀y / g = {tv} s.", "Horizontal es MRU: R = vx·t = {vx}·{tv} = {respuesta} m."]
+    },
+    {
+      "id": "TIR9-b", "habilidad": "TIR9",
+      "enunciado": "Un proyectil está {t} s en el aire y su velocidad horizontal es {vx} m/s. ¿Qué alcance horizontal tiene?",
+      "variables": {"t": [1, 6, 0.5], "vx": [5, 25, 1]},
+      "respuesta": "vx*t", "unidad": "m",
+      "pasos": ["La componente horizontal no cambia (MRU).", "R = vx·t = {vx}·{t} = {respuesta} m."]
+    }
+  ]
+}
