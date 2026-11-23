@@ -1,0 +1,152 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\doi}[1]{https://doi.org/#1}
+
+\bibitem{arthur1998}
+Arthur, W., Bennett, W., Stanush, P.L., McNelly, T.L.: Factors that influence
+  skill decay and retention: A quantitative review and analysis. Human
+  Performance  \textbf{11}(1),  57--101 (1998)
+
+\bibitem{barzagar2019}
+Barzagar~Nazari, K., Ebersbach, M.: Distributing mathematical practice of third
+  and seventh graders: Applicability of the spacing effect in the classroom.
+  Applied Cognitive Psychology  \textbf{33}(2),  288--298 (2019)
+
+\bibitem{cen2006}
+Cen, H., Koedinger, K., Junker, B.: Learning factors analysis -- a general
+  method for cognitive model evaluation and improvement. In: Intelligent
+  Tutoring Systems (ITS 2006). LNCS, vol.~4053, pp. 164--175. Springer,
+  Heidelberg (2006)
+
+\bibitem{cepeda2006}
+Cepeda, N.J., Pashler, H., Vul, E., Wixted, J.T., Rohrer, D.: Distributed
+  practice in verbal recall tasks: A review and quantitative synthesis.
+  Psychological Bulletin  \textbf{132}(3),  354--380 (2006)
+
+\bibitem{choffin2021}
+Choffin, B., Popineau, F., Bourda, Y.: Extending adaptive spacing heuristics to
+  multi-skill items. Journal of Educational Data Mining  \textbf{13}(3),
+  69--102 (2021)
+
+\bibitem{choffin2019}
+Choffin, B., Popineau, F., Bourda, Y., Vie, J.J.: {DAS3H}: Modeling student
+  learning and forgetting for optimally scheduling distributed practice of
+  skills. In: Proceedings of the 12th International Conference on Educational
+  Data Mining (EDM 2019). pp. 29--38 (2019)
+
+\bibitem{corbett1994}
+Corbett, A.T., Anderson, J.R.: Knowledge tracing: Modeling the acquisition of
+  procedural knowledge. User Modeling and User-Adapted Interaction
+  \textbf{4}(4),  253--278 (1994)
+
+\bibitem{doignon1985}
+Doignon, J.P., Falmagne, J.C.: Spaces for the assessment of knowledge.
+  International Journal of Man-Machine Studies  \textbf{23}(2),  175--196
+  (1985)
+
+\bibitem{hunziker2019}
+Hunziker, A., Chen, Y., Mac~Aodha, O., Gomez-Rodriguez, M., Krause, A., Perona,
+  P., Yue, Y., Singla, A.: Teaching multiple concepts to a forgetful learner.
+  In: Advances in Neural Information Processing Systems 32 (NeurIPS 2019)
+  (2019)
+
+\bibitem{junker2001}
+Junker, B.W., Sijtsma, K.: Cognitive assessment models with few assumptions,
+  and connections with nonparametric item response theory. Applied
+  Psychological Measurement  \textbf{25}(3),  258--272 (2001)
+
+\bibitem{kang2016}
+Kang, S.H.K.: Spaced repetition promotes efficient and effective learning:
+  Policy implications for instruction. Policy Insights from the Behavioral and
+  Brain Sciences  \textbf{3}(1),  12--19 (2016)
+
+\bibitem{koedinger2012}
+Koedinger, K.R., Corbett, A.T., Perfetti, C.: The
+  {Knowledge-Learning-Instruction} framework: Bridging the science-practice
+  chasm to enhance robust student learning. Cognitive Science  \textbf{36}(5),
+  757--798 (2012)
+
+\bibitem{lindsey2014}
+Lindsey, R.V., Shroyer, J.D., Pashler, H., Mozer, M.C.: Improving students'
+  long-term knowledge retention through personalized review. Psychological
+  Science  \textbf{25}(3),  639--647 (2014)
+
+\bibitem{nemhauser1978}
+Nemhauser, G.L., Wolsey, L.A., Fisher, M.L.: An analysis of approximations for
+  maximizing submodular set functions -- {I}. Mathematical Programming
+  \textbf{14}(1),  265--294 (1978)
+
+\bibitem{pavlik2009}
+Pavlik, P.I., Cen, H., Koedinger, K.R.: Performance factors analysis -- a new
+  alternative to knowledge tracing. In: Artificial Intelligence in Education
+  (AIED 2009). pp. 531--538. IOS Press, Amsterdam (2009)
+
+\bibitem{pyc2009}
+Pyc, M.A., Rawson, K.A.: Testing the retrieval effort hypothesis: Does greater
+  difficulty correctly recalling information lead to higher levels of memory?
+  Journal of Memory and Language  \textbf{60}(4),  437--447 (2009)
+
+\bibitem{reddy2016}
+Reddy, S., Labutov, I., Banerjee, S., Joachims, T.: Unbounded human learning:
+  Optimal scheduling for spaced repetition. In: Proceedings of the 22nd ACM
+  SIGKDD International Conference on Knowledge Discovery and Data Mining. pp.
+  1815--1824. ACM (2016)
+
+\bibitem{rohrer2015}
+Rohrer, D., Dedrick, R.F., Stershic, S.: Interleaved practice improves
+  mathematics learning. Journal of Educational Psychology  \textbf{107}(3),
+  900--908 (2015)
+
+\bibitem{settles2016}
+Settles, B., Meeder, B.: A trainable spaced repetition model for language
+  learning. In: Proceedings of the 54th Annual Meeting of the Association for
+  Computational Linguistics. pp. 1848--1858. ACL (2016)
+
+\bibitem{skycak2023}
+Skycak, J.: Individualized spaced repetition in hierarchical knowledge
+  structures.
+  \url{https://www.justinmath.com/individualized-spaced-repetition-in-hierarchical-knowledge-structures/}
+  (2023), last accessed 2026/11/23
+
+\bibitem{su2023}
+Su, J., Ye, J., Nie, L., Cao, Y., Chen, Y.: Optimizing spaced repetition
+  schedule by capturing the dynamics of memory. IEEE Transactions on Knowledge
+  and Data Engineering  \textbf{35}(10),  10085--10097 (2023)
+
+\bibitem{tabibian2019}
+Tabibian, B., Upadhyay, U., De, A., Zarezade, A., Sch{\"o}lkopf, B.,
+  Gomez-Rodriguez, M.: Enhancing human learning via spaced repetition
+  optimization. Proceedings of the National Academy of Sciences
+  \textbf{116}(10),  3988--3993 (2019)
+
+\bibitem{tatsuoka1983}
+Tatsuoka, K.K.: Rule space: An approach for dealing with misconceptions based
+  on item response theory. Journal of Educational Measurement  \textbf{20}(4),
+  345--354 (1983)
+
+\bibitem{delatorre2011}
+de~la Torre, J.: The generalized {DINA} model framework. Psychometrika
+  \textbf{76}(2),  179--199 (2011)
+
+\bibitem{upadhyay2021}
+Upadhyay, U., Lancashire, G., Moser, C., Gomez-Rodriguez, M.: Large-scale
+  randomized experiments reveals that machine learning-based instruction helps
+  people memorize more effectively. npj Science of Learning  \textbf{6}, ~26
+  (2021)
+
+\bibitem{voice2020}
+Voice, A., Stirton, A.: Spaced repetition: Towards more effective learning in
+  {STEM}. New Directions in the Teaching of Physical Sciences  \textbf{15}(1)
+  (2020). \doi{10.29311/ndtps.v0i15.3376}
+
+\bibitem{wozniak1990}
+Wo{\'z}niak, P.A.: Optimization of learning. Master's thesis, Pozna{\'n}
+  University of Technology (1990)
+
+\bibitem{ye2022}
+Ye, J., Su, J., Cao, Y.: A stochastic shortest path algorithm for optimizing
+  spaced repetition scheduling. In: Proceedings of the 28th ACM SIGKDD
+  Conference on Knowledge Discovery and Data Mining. pp. 4381--4390. ACM (2022)
+
+\end{thebibliography}
